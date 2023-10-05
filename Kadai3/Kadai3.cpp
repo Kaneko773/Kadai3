@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int mult(int a, int b);
+static int mult(int a, int b);
 
 int main()
 {
@@ -17,7 +17,7 @@ int main()
 	cout << "かけ算の結果 : " << mult(a, b);
 }
 
-int mult(int a, int b)
+static int mult(int a, int b)
 {
 	return a * b;
 }
